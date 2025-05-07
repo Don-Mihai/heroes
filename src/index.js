@@ -6,7 +6,9 @@ import Home from './pages/Home/Home';
 import Heroes from './pages/Heroes/Heroes';
 import Divisions from './pages/Divisions/Divisions';
 import TimeOfHeroes from './pages/TimeOfHeroes/TimeOfHeroes';
-import Info from './pages/Info';
+import InfoHero from './pages/InfoHero';
+import InfoDivision from './pages/InfoDivision';
+import InfoTime from './pages/InfoTime';
 import Preview from './pages/Preview/Preview';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -32,8 +34,16 @@ const router = createBrowserRouter([
     element: <TimeOfHeroes />,
   },
   {
-    path: '/info/:id',
-    element: <Info />,
+    path: '/hero-info/:id',
+    element: <InfoHero />,
+  },
+  {
+    path: '/division-info/:id',
+    element: <InfoDivision />,
+  },
+  {
+    path: '/time-info/:id',
+    element: <InfoTime />,
   },
 ]);
 root.render(<RouterProvider router={router} />);

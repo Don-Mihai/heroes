@@ -6,7 +6,7 @@ import BackButton from '../../components/BackButton/BackButton';
 import { useParams } from 'react-router-dom';
 import { slidesHeroes } from '../Heroes/Heroes';
 
-const Info = () => {
+const InfoHero = () => {
   const { id } = useParams();
 
   const item = slidesHeroes.find((item) => item.id === Number(id));
@@ -22,4 +22,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export default InfoHero;

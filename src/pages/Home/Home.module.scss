@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.card__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+  margin-bottom: 150px;
+}

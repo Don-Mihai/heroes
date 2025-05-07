@@ -1,0 +1,32 @@
+.button {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  position: relative;
+  width: 824px;
+  height: 251px;
+  border: none; /* Убираем стандартную рамку */
+  border-radius: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background-color: #384924; /* Цвет фона */
+
+  font-size: 56px;
+  color: #fff;
+  word-wrap: break-word;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button:active {
+  background-color: #7b0405;
+}
+
+.icon {
+  position: absolute;
+  top: 32px;
+  left: 74px;
+}

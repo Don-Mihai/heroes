@@ -1,0 +1,32 @@
+import React from 'react';
+import HeroCard from '../../components/HeroCard';
+import styles from './Home.module.scss';
+import BackButton from '../../components/BackButton/BackButton';
+
+const Home = () => {
+  return (
+    <div className={styles.wrapper}>
+      <div className={styles.card__container}>
+        <HeroCard
+          link="/heroes"
+          imgSrc="/img/Heroes.png"
+          isIcon={true}
+          textButton="Герои рф"
+        />
+        <HeroCard
+          link="/divisions"
+          imgSrc="/img/Heroes.png"
+          textButton="батальоны и подразделения РБ"
+        />
+        <HeroCard
+          link="/time"
+          imgSrc="/img/Heroes.png"
+          textButton='Проект "Время Героев"'
+        />
+      </div>
+      <BackButton backUrl="/" />
+    </div>
+  );
+};
+
+export default Home;

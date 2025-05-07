@@ -1,0 +1,18 @@
+.wrapper {
+  background-color: rgba(100, 0, 1, 0.87);
+  display: inline-flex;
+  align-items: center;
+  height: 240px;
+  border-radius: 0 25px 25px 0;
+  padding-left: 200px;
+  margin-top: 100px;
+  padding-right: 300px;
+  margin-bottom: 100px;
+}
+.title {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 130px;
+  margin-right: 100px;
+}

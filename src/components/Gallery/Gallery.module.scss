@@ -27,6 +27,16 @@
   border: 6px solid #fcbd59;
 }
 
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+}
+
 .image {
   display: block;
   width: 100%;

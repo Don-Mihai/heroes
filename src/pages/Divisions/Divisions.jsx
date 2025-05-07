@@ -8,7 +8,8 @@ import Search from '../../components/Search';
 export const slidesDivisions = [
   {
     id: 1,
-    src: '/images/img1-1.jpg',
+    src: '/img/img1-1.jpg',
+    srcDescription: '/img/img1-1.jpg',
     name: 'башкирский артиллерийский дивизион имени мугина нагаева',
     title: '',
     link: '/division-info/1',
@@ -16,7 +17,8 @@ export const slidesDivisions = [
   },
   {
     id: 2,
-    src: '/images/img2-1.jpg',
+    src: '/img/img2-1.jpg',
+    srcDescription: '/img/img2-1.jpg',
     name: 'башкирская артиллерийская батарея имени алексея сухорукова',
     title: '',
     link: '/division-info/2',
@@ -29,7 +31,8 @@ export const slidesDivisions = [
   },
   {
     id: 3,
-    src: '/images/img3-1.jpg',
+    src: '/img/img3-1.jpg',
+    srcDescription: '/img/img3-1.jpg',
     name: 'башкирский батальон имени миннигали губайдуллина',
     title: '',
     link: '/division-info/3',
@@ -39,7 +42,8 @@ export const slidesDivisions = [
   },
   {
     id: 4,
-    src: '/images/img-41.jpg',
+    src: '/img/img4-1.jpg',
+    srcDescription: '/img/img4-1.jpg',
     name: 'башкирский батальон имени салавата юлаева',
     title: '',
     link: '/division-info/4',
@@ -47,7 +51,8 @@ export const slidesDivisions = [
   },
   {
     id: 5,
-    src: '/images/img5-1.jpg',
+    src: '/img/img5-1.jpg',
+    srcDescription: '/img/img5-1.jpg',
     name: 'башкирский батальон имени даяна мурзина',
     title: '',
     link: '/division-info/5',
@@ -59,7 +64,8 @@ export const slidesDivisions = [
   },
   {
     id: 6,
-    src: '/images/img6-1.jpg',
+    src: '/img/img6-1.jpg',
+    srcDescription: '/img/img6-1.jpg',
     name: 'башкирский батальон имени тагира кусимова',
     title: '',
     link: '/division-info/6',
@@ -74,7 +80,8 @@ export const slidesDivisions = [
   },
   {
     id: 7,
-    src: '/images/img7-1.jpg',
+    src: '/img/img7-1.jpg',
+    srcDescription: '/img/img7-1.jpg',
     name: 'башкирский батальон имени доставалова',
     title: '',
     link: '/division-info/7',
@@ -82,7 +89,8 @@ export const slidesDivisions = [
   },
   {
     id: 8,
-    src: '/images/img8-1.jpg',
+    src: '/img/img8-1.jpg',
+    srcDescription: '/img/img8-1.jpg',
     name: 'башкирский добровольческий отряд ватан',
     title: '',
     link: '/division-info/8',
@@ -90,7 +98,8 @@ export const slidesDivisions = [
   },
   {
     id: 9,
-    src: '/images/img9-1.jpg',
+    src: '/img/img9-1.jpg',
+    srcDescription: '/img/img9-1.jpg',
     name: 'башкирская инженерно-саперная рота имени георгия ветошникова',
     title: '',
     link: '/division-info/9',
@@ -98,7 +107,8 @@ export const slidesDivisions = [
   },
   {
     id: 10,
-    src: '/images/img10-1.jpg',
+    src: '/img/img10-1.jpg',
+    srcDescription: '/img/img10-1.jpg',
     name: 'башкирская медицинская рота имени ахмета давлетова',
     title: '',
     link: '/division-info/10',
@@ -110,7 +120,8 @@ export const slidesDivisions = [
   },
   {
     id: 11,
-    src: '/images/img11-1.jpg',
+    src: '/img/img11-1.jpg',
+    srcDescription: '/img/img11-1.jpg',
     name: 'башкирский танковый батальон имени сергея зорина',
     title: '',
     link: '/division-info/11',

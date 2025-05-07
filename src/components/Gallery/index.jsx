@@ -5,7 +5,7 @@ import 'keen-slider/keen-slider.min.css';
 import styles from './Gallery.module.scss';
 import { useNavigate } from 'react-router-dom';
 
-const Gallery = ({ slides }) => {
+const Gallery = ({ slides, isVideo }) => {
   const navigate = useNavigate();
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
@@ -32,12 +32,23 @@ const Gallery = ({ slides }) => {
       <div ref={sliderRef} className={`keen-slider ${styles.slider}`}>
         {slides.map((slide) => (
           <div key={slide.id} className={`keen-slider__slide ${styles.slide}`}>
-            <img
-              src={slide.src}
-              alt={slide.title}
-              className={styles.image}
-              onClick={() => handleSlideClick(slide.link)}
-            />
+            {isVideo ? (
+              <video
+                src={slide.src}
+                className={styles.video}
+                autoPlay
+                loop
+                muted
+              />
+            ) : (
+              <img
+                src={slide.src}
+                alt={slide.title}
+                className={styles.image}
+                onClick={() => handleSlideClick(slide.link)}
+              />
+            )}
+
             <button
               className={styles.detail}
               onClick={() => handleSlideClick(slide.link)}

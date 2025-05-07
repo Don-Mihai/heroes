@@ -4,18 +4,26 @@ import Title from '../../components/Title';
 import Facts from '../../components/Facts';
 import BackButton from '../../components/BackButton/BackButton';
 import { useParams } from 'react-router-dom';
-import { slidesHeroes } from '../Heroes/Heroes';
+import { slidesTimes } from '../TimeOfHeroes/TimeOfHeroes';
 
 const InfoTime = () => {
   const { id } = useParams();
 
-  const item = slidesHeroes.find((item) => item.id === Number(id));
+  const item = slidesTimes.find((item) => item.id === Number(id));
   return (
     <>
-      <Title title={item.name} />
-      <Facts text={item.description} imgSrc={item.srcDescription} />
+      <div className={styles.container}>
+        <video
+          className={styles.video}
+          src={item.srcDescription}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+      </div>
       <div className={styles.buttons}>
-        <BackButton backUrl="/heroes" />
+        <BackButton backUrl="/time" />
         <div></div>
       </div>
     </>

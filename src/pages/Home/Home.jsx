@@ -24,7 +24,10 @@ const Home = () => {
           textButton='Проект "Время Героев"'
         />
       </div>
-      <BackButton backUrl="/" />
+      <div className={styles.buttons}>
+        <BackButton backUrl="/" />
+        {/* <Search /> */}
+      </div>
     </div>
   );
 };

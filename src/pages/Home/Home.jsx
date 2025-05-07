@@ -15,12 +15,12 @@ const Home = () => {
         />
         <HeroCard
           link="/divisions"
-          imgSrc="/img/Heroes.png"
+          imgSrc="/img/Batalony.png"
           textButton="батальоны и подразделения РБ"
         />
         <HeroCard
           link="/time"
-          imgSrc="/img/Heroes.png"
+          imgSrc="/img/HeroesTime.png"
           textButton='Проект "Время Героев"'
         />
       </div>

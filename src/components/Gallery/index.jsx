@@ -3,8 +3,10 @@ import React from 'react';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import styles from './Gallery.module.scss';
+import { useNavigate } from 'react-router-dom';
 
 const Gallery = ({ slides }) => {
+  const navigate = useNavigate();
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
     slides: {
@@ -13,6 +15,10 @@ const Gallery = ({ slides }) => {
     },
     mode: 'free-snap',
   });
+
+  const handleSlideClick = (link) => {
+    navigate(link);
+  };
 
   return (
     <div className={styles.container}>
@@ -30,11 +36,11 @@ const Gallery = ({ slides }) => {
               src={slide.src}
               alt={slide.title}
               className={styles.image}
-              onClick={() => (window.location.href = slide.link)}
+              onClick={() => handleSlideClick(slide.link)}
             />
             <button
               className={styles.detail}
-              onClick={() => (window.location.href = slide.link)}
+              onClick={() => handleSlideClick(slide.link)}
             >
               Подробнее
             </button>

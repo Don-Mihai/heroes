@@ -32,7 +32,7 @@ const router = createBrowserRouter([
     element: <TimeOfHeroes />,
   },
   {
-    path: '/info',
+    path: '/info/:id',
     element: <Info />,
   },
 ]);

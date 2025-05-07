@@ -18,6 +18,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Calibrib';
+  src: local('Calibrib'), url('./calibri42/calibrib.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   font-family: 'Calibri', sans-serif;
   background-image: url('../../public/img/heroBackground.jpg');

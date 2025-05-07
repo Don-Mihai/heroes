@@ -135,11 +135,11 @@ export const slidesDivisions = [
 const Divisions = () => {
   return (
     <>
-      <Title title={'Батальоны и подразделения РБ'} />
+      <Title fullWidth title={'Батальоны и подразделения РБ'} />
       <Gallery slides={slidesDivisions} />
       <div className={styles.buttons}>
         <BackButton backUrl="/main" />
-        <Search />
+        {/* <Search /> */}
       </div>
     </>
   );

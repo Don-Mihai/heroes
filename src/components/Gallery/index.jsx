@@ -31,7 +31,11 @@ const Gallery = ({ slides, isVideo }) => {
       </button>
       <div ref={sliderRef} className={`keen-slider ${styles.slider}`}>
         {slides.map((slide) => (
-          <div key={slide.id} className={`keen-slider__slide ${styles.slide}`}>
+          <div
+            key={slide.id}
+            className={`keen-slider__slide ${styles.slide}`}
+            onClick={() => handleSlideClick(slide.link)}
+          >
             {isVideo ? (
               <video
                 src={slide.src}
@@ -41,20 +45,14 @@ const Gallery = ({ slides, isVideo }) => {
                 muted
               />
             ) : (
-              <img
-                src={slide.src}
-                alt={slide.title}
-                className={styles.image}
-                onClick={() => handleSlideClick(slide.link)}
-              />
+              <img src={slide.src} alt={slide.title} className={styles.image} />
             )}
 
-            <button
-              className={styles.detail}
-              onClick={() => handleSlideClick(slide.link)}
-            >
-              Подробнее
-            </button>
+            <div className={styles.bottom}>
+              <div className={styles.title}>{slide.name}</div>
+              <div className={styles.subtitle}>{slide.title}</div>
+              {/* <button className={styles.detail}>Подробнее</button> */}
+            </div>
           </div>
         ))}
       </div>

@@ -167,8 +167,7 @@ export const slidesHeroes = [
 const Heroes = () => {
   return (
     <div className={styles.wrapper}>
-      <span className={styles.icon}></span>
-      <Title title={'Герои РФ'} />
+      <Title isIcon fullWidth title={'Герои РФ'} />
       <Gallery slides={slidesHeroes} />
 
       <div className={styles.buttons}>

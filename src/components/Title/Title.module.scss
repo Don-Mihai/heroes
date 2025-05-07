@@ -8,6 +8,23 @@
   margin-bottom: 100px;
   background-color: rgba(100, 0, 1, 0.87);
 }
+
+.icon {
+  position: absolute;
+  top: 130px;
+  left: 0px;
+  width: 250px;
+  height: 250px;
+  background: url('../../../public/img/star.png') no-repeat center;
+  background-size: contain;
+}
+
+.wrapper.setIcon {
+  padding: 50px 300px 50px 400px;
+}
+.setIcon .icon {
+  left: 100px;
+}
 .title {
   color: white;
   font-weight: 700;

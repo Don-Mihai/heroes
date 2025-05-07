@@ -250,11 +250,11 @@ export const slidesTimes = [
 const TimeOfHeroes = () => {
   return (
     <>
-      <Title title='Проект "Время Героев"' />
+      <Title fullWidth title='Проект "Время Героев"' />
 
       <Gallery isVideo={true} slides={slidesTimes} />
       <div className={styles.buttons}>
-        <BackButton backUrl="/heroes" />
+        <BackButton backUrl="/main" />
         <div></div>
       </div>
     </>

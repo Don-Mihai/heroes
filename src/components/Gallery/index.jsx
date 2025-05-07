@@ -1,9 +1,55 @@
+// Slider.jsx
 import React from 'react';
+import { useKeenSlider } from 'keen-slider/react';
+import 'keen-slider/keen-slider.min.css';
 import styles from './Gallery.module.scss';
 
+const Gallery = ({ slides }) => {
+  const [sliderRef, slider] = useKeenSlider({
+    loop: true,
+    slides: {
+      perView: 5,
+      spacing: 85,
+    },
+    mode: 'free-snap',
+  });
 
-const Gallery = () => {
-    return <div className={styles.gallery}></div>;
+  return (
+    <div className={styles.container}>
+      <button
+        onClick={() => slider.prev()}
+        className={styles.arrow}
+        aria-label="Previous"
+      >
+        ‹
+      </button>
+      <div ref={sliderRef} className={`keen-slider ${styles.slider}`}>
+        {slides.map((slide) => (
+          <div key={slide.id} className={`keen-slider__slide ${styles.slide}`}>
+            <img
+              src={slide.src}
+              alt={slide.title}
+              className={styles.image}
+              onClick={() => (window.location.href = slide.link)}
+            />
+            <button
+              className={styles.detail}
+              onClick={() => (window.location.href = slide.link)}
+            >
+              Подробнее
+            </button>
+          </div>
+        ))}
+      </div>
+      <button
+        onClick={() => slider.next()}
+        className={styles.arrow}
+        aria-label="Next"
+      >
+        ›
+      </button>
+    </div>
+  );
 };
 
 export default Gallery;

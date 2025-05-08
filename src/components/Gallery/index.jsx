@@ -22,13 +22,12 @@ const Gallery = ({ slides, isVideo }) => {
 
   return (
     <div className={styles.container}>
-      <button
-        onClick={() => slider.prev()}
+      <img
+        onClick={() => slider.current.prev()}
         className={styles.arrow}
-        aria-label="Previous"
-      >
-        ‹
-      </button>
+        src="/img/arrow.png"
+        alt=""
+      />
       <div ref={sliderRef} className={`keen-slider ${styles.slider}`}>
         {slides.map((slide) => (
           <div
@@ -56,13 +55,12 @@ const Gallery = ({ slides, isVideo }) => {
           </div>
         ))}
       </div>
-      <button
-        onClick={() => slider.next()}
-        className={styles.arrow}
-        aria-label="Next"
-      >
-        ›
-      </button>
+      <img
+        onClick={() => slider.current.next()}
+        className={`${styles.arrow} ${styles.arrowRight}`}
+        src="/img/arrow.png"
+        alt=""
+      />
     </div>
   );
 };

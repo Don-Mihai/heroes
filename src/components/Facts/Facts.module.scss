@@ -1,6 +1,6 @@
 .wrapper {
   width: 100%;
-  height: 1100px;
+  height: 470px;
   margin-bottom: 150px;
   display: flex;
   overflow: visible;
@@ -14,13 +14,13 @@
   overflow: hidden;
   touch-action: pan-y;
   overflow-y: scroll;
-  padding-left: 100px;
+  padding-left: 20px;
 }
 .text__content {
   height: 100%;
   width: calc(100% + 30px);
   padding-right: 30px;
-  font-size: 60px;
+  font-size: 24px;
 }
 
 .wrap__foto {
@@ -31,7 +31,7 @@
 }
 
 .foto {
-  margin-top: -350px;
+  margin-top: -130px;
   width: 100%;
   height: auto;
   object-fit: cover;

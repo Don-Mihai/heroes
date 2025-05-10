@@ -170,7 +170,7 @@ const Heroes = () => {
       <Title isIcon fullWidth title={'Герои РФ'} />
       <Gallery slides={slidesHeroes} />
 
-      <div className={styles.buttons}>
+      <div className="back-buttons">
         <BackButton backUrl="/main" />
         {/* <Search /> */}
       </div>

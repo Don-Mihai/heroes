@@ -11,7 +11,7 @@ const Gallery = ({ slides, isVideo }) => {
     loop: true,
     slides: {
       perView: 5,
-      spacing: 85,
+      spacing: 15,
     },
     mode: 'free-snap',
   });

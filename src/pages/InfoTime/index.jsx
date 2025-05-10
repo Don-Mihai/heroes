@@ -22,7 +22,7 @@ const InfoTime = () => {
           playsInline
         />
       </div>
-      <div className={styles.buttons}>
+      <div className="back-buttons">
         <BackButton backUrl="/time" />
         <div></div>
       </div>

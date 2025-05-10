@@ -137,7 +137,7 @@ const Divisions = () => {
     <>
       <Title fullWidth title={'Батальоны и подразделения РБ'} />
       <Gallery slides={slidesDivisions} />
-      <div className={styles.buttons}>
+      <div className="back-buttons">
         <BackButton backUrl="/main" />
         {/* <Search /> */}
       </div>

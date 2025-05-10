@@ -14,7 +14,7 @@ const InfoHero = () => {
     <>
       <Title title={item.name} />
       <Facts text={item.description} imgSrc={item.srcDescription} />
-      <div className={styles.buttons}>
+      <div className="back-buttons">
         <BackButton backUrl="/heroes" />
         <div></div>
       </div>

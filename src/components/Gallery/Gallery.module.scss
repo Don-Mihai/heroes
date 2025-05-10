@@ -3,16 +3,17 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 278px;
-  margin-left: 160px;
-  margin-right: 160px;
+  margin-top: 150px;
+  margin-left: 40px;
+  margin-right: 40px;
   position: relative;
 }
 
 .arrow {
   position: absolute;
   top: 45%;
-  left: -64px;
+  left: -30px;
+  height: 70px;
   background: transparent;
   border: none;
   font-size: 30px;
@@ -23,7 +24,7 @@
 .arrowRight {
   transform: rotate(180deg);
   left: auto;
-  right: -64px;
+  right: -30px;
 }
 
 .slider {
@@ -32,13 +33,13 @@
 
 .slide {
   display: flex;
-  height: 886px;
+  height: 400px;
   position: relative;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0 0 80px 80px;
-  border: 6px solid #fcbd59;
+  border-radius: 0 0 20px 20px;
+  border: 4px solid #fcbd59;
 }
 
 .video {
@@ -70,19 +71,20 @@
   text-transform: uppercase;
   font-family: 'Calibrib', sans-serif;
   line-height: 0.8;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
 }
 
 .title {
   margin-bottom: 15px;
-  font-size: 70px;
+  font-size: 30px;
   font-weight: bold;
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 .subtitle {
-  margin-bottom: 20px;
-  font-size: 45px;
-  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: normal;
   color: white;
 }
 

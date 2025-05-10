@@ -242,7 +242,7 @@ export const slidesTimes = [
   },
   // {
   //   id: 40,
-  //   src: '/videos/video-40.mp4',
+  //   src: '/videos/video-40.jpg',
   //   srcDescription: '/videos/video-40.mp4',
   //   link: '/time-info/40',
   // },
@@ -252,7 +252,7 @@ const TimeOfHeroes = () => {
     <>
       <Title fullWidth title='Проект "Время Героев"' />
 
-      <Gallery isVideo={false} slides={slidesTimes} />
+      <Gallery isVideo={true} slides={slidesTimes} />
       <div className="back-buttons">
         <BackButton backUrl="/main" />
         <div></div>

@@ -36,13 +36,7 @@ const Gallery = ({ slides, isVideo }) => {
             onClick={() => handleSlideClick(slide.link)}
           >
             {isVideo ? (
-              <video
-                src={slide.src}
-                className={styles.video}
-                autoPlay
-                loop
-                muted
-              />
+              <img src={slide.src} alt={slide.title} className={styles.video} />
             ) : (
               <img src={slide.src} alt={slide.title} className={styles.image} />
             )}

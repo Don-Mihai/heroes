@@ -249,15 +249,14 @@ export const slidesTimes = [
 ];
 const TimeOfHeroes = () => {
   return (
-    <>
-      <Title fullWidth title='Проект "Время Героев"' />
-
-      <Gallery isVideo={true} slides={slidesTimes} />
-      <div className="back-buttons">
-        <BackButton backUrl="/main" />
-        <div></div>
-      </div>
-    </>
+      <>
+          <Title fullWidth title='Проект "Время Героев"' />
+          <div className={styles.wrapper_button}>
+              <BackButton backUrl="/main" />
+              <div></div>
+          </div>
+          <Gallery isVideo={true} slides={slidesTimes} />
+      </>
   );
 };
 

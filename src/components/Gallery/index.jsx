@@ -11,7 +11,7 @@ const Gallery = ({ slides, isVideo }) => {
     loop: true,
     slides: {
       perView: 5,
-      spacing: 15,
+      spacing: 60,
     },
     mode: 'free-snap',
   });
@@ -35,16 +35,16 @@ const Gallery = ({ slides, isVideo }) => {
             className={`keen-slider__slide ${styles.slide}`}
             onClick={() => handleSlideClick(slide.link)}
           >
-            {isVideo ? (
-              <img src={slide.src} alt={slide.title} className={styles.video} />
-            ) : (
-              <img src={slide.src} alt={slide.title} className={styles.image} />
-            )}
-
+            <div className={styles.imageContainer}>
+              {isVideo ? (
+                <img src={slide.src} alt={slide.title} className={styles.video} />
+              ) : (
+                <img src={slide.src} alt={slide.title} className={styles.image} />
+              )}
+            </div>
             <div className={styles.bottom}>
               <div className={styles.title}>{slide.name}</div>
               <div className={styles.subtitle}>{slide.title}</div>
-              {/* <button className={styles.detail}>Подробнее</button> */}
             </div>
           </div>
         ))}

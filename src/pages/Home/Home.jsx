@@ -23,6 +23,11 @@ const Home = () => {
           imgSrc="/img/HeroesTime.png"
           textButton='Проект "Время Героев"'
         />
+		  <HeroCard
+          link="/help"
+          imgSrc="/img/HumAid.png"
+          textButton='"Гуманитарная помощь"'
+        />
       </div>
       <div className="back-buttons">
         <BackButton backUrl="/" />

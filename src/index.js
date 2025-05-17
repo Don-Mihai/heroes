@@ -14,6 +14,30 @@ import Preview from './pages/Preview/Preview';
 // 1. Глобально отключаем контекстное меню (правый клик и долгий тап)
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 
+// Инициализация таймера неактивности
+let inactivityTimer;
+const INACTIVITY_TIMEOUT = 2 * 60 * 1000; // 2 минуты в миллисекундах
+
+// Функция для сброса таймера
+const resetInactivityTimer = () => {
+  clearTimeout(inactivityTimer);
+  inactivityTimer = setTimeout(() => {
+    // Перенаправление на начальную страницу
+    window.location.href = '/';
+  }, INACTIVITY_TIMEOUT);
+};
+
+// Отслеживание действий пользователя
+const userActivityEvents = ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart', 'click', 'keydown'];
+
+// Добавление обработчиков событий
+userActivityEvents.forEach((event) => {
+  document.addEventListener(event, resetInactivityTimer, true);
+});
+
+// Запуск таймера при загрузке страницы
+resetInactivityTimer();
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {

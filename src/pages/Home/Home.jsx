@@ -2,6 +2,7 @@ import React from 'react';
 import HeroCard from '../../components/HeroCard';
 import styles from './Home.module.scss';
 import BackButton from '../../components/BackButton/BackButton';
+import Telegram from '../../components/Telegram';
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
       </div>
       <div className="back-buttons">
         <BackButton backUrl="/" />
-        {/* <Search /> */}
+        <Telegram />
       </div>
     </div>
   );

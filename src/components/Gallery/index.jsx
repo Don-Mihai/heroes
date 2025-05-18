@@ -32,11 +32,11 @@ const Gallery = ({ slides, isVideo }) => {
                             ) : (
                                 <img src={slide.src} alt={slide.title} className={styles.image} />
                             )}
-                        </div>
-                        <div className={styles.bottom}>
-                            <div className={styles.title}>{slide.name}</div>
-                            <div className={styles.subtitle}>{slide.title}</div>
-                            {/* <button className={styles.detail}>Подробнее</button> */}
+                            <div className={styles.bottom}>
+                                <div className={styles.title}>{slide.name}</div>
+                                <div className={styles.subtitle}>{slide.title}</div>
+                                {/* <button className={styles.detail}>Подробнее</button> */}
+                            </div>
                         </div>
                     </>
                 ))}

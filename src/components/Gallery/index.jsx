@@ -10,7 +10,7 @@ const Gallery = ({ slides, isVideo }) => {
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
     slides: {
-      perView: 5,
+      perView: 3,
       spacing: 60,
     },
     mode: 'free-snap',

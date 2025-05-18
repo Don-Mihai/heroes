@@ -4,6 +4,7 @@ import Title from '../../components/Title';
 import Player from '../../components/Player';
 import BackButton from '../../components/BackButton/BackButton';
 import Gallery from '../../components/Gallery';
+import {useState} from 'react';
 
 export const slidesTimes = [
   {
@@ -248,16 +249,20 @@ export const slidesTimes = [
   // },
 ];
 const TimeOfHeroes = () => {
-  return (
-      <>
-          <Title fullWidth title='Проект "Время Героев"' />
-          <div className={styles.wrapper_button}>
-              <BackButton backUrl="/main" />
-              <div></div>
-          </div>
-          <Gallery isVideo={true} slides={slidesTimes} />
-      </>
-  );
+    const [isVideoOpen, setIsVideoOpen] = useState(false);
+	 const handleToggleVideo = () => {
+         setIsVideoOpen(prev => !prev);
+     };
+    return (
+        <>
+            <Title fullWidth title='Проект "Время Героев"' />
+
+            <Gallery isVideo={true} slides={slidesTimes} onVideoClick={() => handleToggleVideo()} />
+            
+                <BackButton backUrl="/main" className={`${isVideoOpen ? styles.videoOpen : ''}`} />
+            
+        </>
+    );
 };
 
 export default TimeOfHeroes;

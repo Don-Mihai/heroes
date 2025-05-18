@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Divisions.module.scss';
 import Title from '../../components/Title';
-import Gallery from '../../components/Gallery';
+import DivisionGallery from '../../components/DivisionGallery/DivisionGallery';
 import BackButton from '../../components/BackButton/BackButton';
 import Search from '../../components/Search';
 
@@ -152,7 +152,7 @@ const Divisions = () => {
   return (
     <>
       <Title fullWidth title={'Батальоны и подразделения РБ'} />
-      <Gallery slides={slidesDivisions} />
+      <DivisionGallery slides={slidesDivisions} />
       <div className="back-buttons">
         <BackButton backUrl="/main" />
         {/* <Search /> */}

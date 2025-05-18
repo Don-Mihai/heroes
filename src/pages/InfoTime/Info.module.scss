@@ -1,8 +1,9 @@
 .buttons {
   position: absolute;
-  bottom: 80px;
+  right: 20px;
+  top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
   border: none;

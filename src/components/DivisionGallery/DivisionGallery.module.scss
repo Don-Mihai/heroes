@@ -1,93 +1,88 @@
 .container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0 auto;
-	margin-top: 150px;
-	margin-left: 40px;
-	margin-right: 40px;
-	position: relative;
-	
- }
- 
- .arrow {
-	position: absolute;
-	top: 20%;
-	left: -30px;
-	height: 70px;
-	background: transparent;
-	border: none;
-	font-size: 30px;
-	cursor: pointer;
-	z-index: 2;
- }
- 
- .arrowRight {
-	transform: rotate(180deg);
-	left: auto;
-	right: -30px;
- }
- 
- .slider {
-	width: 100%;
-	
- }
- 
- .slide {
-	display: flex;
-	flex-direction: column; 
-	height: auto; 
-	
-	overflow: hidden;
-	
-	
-	background: transparent; 
- }
- 
- .imageContainer {
-	height: 300px;
-	overflow: hidden;
-	border: 4px solid #dccaac;
-	border-radius: 8px;
- }
- 
- .video {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
- }
- 
- .image {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	filter: brightness(30%);
-	
- }
- 
- .bottom {
-	margin-top: 50px;
-	padding: 20px;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: 'Calibrib', sans-serif;
-	background: #dccaac;
-	color: rgb(0, 0, 0);
-	border-radius: 25px;
-	height: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
- }
- 
- .title {
-	
-	font-size: 50px;
-	font-weight: 900;
-	
- }
- 
- .subtitle {
-	font-size: 14px;
-	font-weight: normal;
- }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-left: 40px;
+  margin-right: 40px;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 20%;
+  left: -30px;
+  height: 70px;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.arrowRight {
+  transform: rotate(180deg);
+  left: auto;
+  right: -30px;
+}
+
+.slider {
+  width: 100%;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+
+  overflow: hidden;
+
+  background: transparent;
+}
+
+.imageContainer {
+  height: 300px;
+  overflow: hidden;
+  border: 4px solid #dccaac;
+  border-radius: 8px;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(30%);
+}
+
+.bottom {
+  margin-top: 50px;
+  padding: 20px;
+  min-height: 140px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Calibrib', sans-serif;
+  background: #dccaac;
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: normal;
+}

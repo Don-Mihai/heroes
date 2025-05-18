@@ -5,15 +5,16 @@
   align-items: center;
   margin-right: 10px;
   position: relative;
-  width: 420px;
-  height: 140px;
+  width: 340px;
+  height: 120px;
   border: none; /* Убираем стандартную рамку */
   border-radius: 24px;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   background-color: #384924; /* Цвет фона */
 
-  font-size: 30px;
+  font-size: 26px;
+  letter-spacing: 2px;
   color: #fff;
   word-wrap: break-word;
   text-align: center;
@@ -26,8 +27,8 @@
 }
 
 .icon {
-  height: 150px;
+  height: 120px;
   position: absolute;
   top: 20px;
-  left: 10px;
+  left: -5px;
 }

@@ -13,16 +13,9 @@ const InfoTime = () => {
   return (
     <>
       <div className={styles.container}>
-        <video
-          className={styles.video}
-          src={item.srcDescription}
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
+        <video className={styles.video} src={item.srcDescription} autoPlay loop muted playsInline />
       </div>
-      <div className="back-buttons">
+      <div className={styles.buttons}>
         <BackButton backUrl="/time" />
         <div></div>
       </div>

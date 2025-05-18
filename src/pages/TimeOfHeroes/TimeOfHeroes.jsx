@@ -256,7 +256,7 @@ const TimeOfHeroes = () => {
       <Gallery isVideo={true} slides={slidesTimes} />
 
       <div className="back-buttons">
-        <BackButton backUrl="/heroes" />
+        <BackButton backUrl="/main" />
         <div></div>
       </div>
     </>

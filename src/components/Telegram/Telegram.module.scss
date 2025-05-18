@@ -1,0 +1,20 @@
+.container {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  // bottom: 5x;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.qr {
+  height: 120px;
+  width: auto;
+  border-radius: 10px;
+  clip-path: inset(2px);
+}
+
+.telegram {
+  height: 70px;
+}
